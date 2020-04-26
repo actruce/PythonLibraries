@@ -1,0 +1,79 @@
+class name must starts with a letter or underscore.
+
+python -i first-class.py
+
+☆ It turns out that we don't have to do anything special in the class definition. We can set arbitrary attributes on an instantiated object using the dot notation.
+
+class Point:
+    pass
+
+p1 = Point()
+p2 = Point()
+
+p1.x = 5
+p1.y = 4
+
+p2.x = 3
+p2.y = 6
+
+print(p1.x, p1.y)
+print(p2.x, p2.y)
+
+<class function vs. static function>
+'self' -> we can use other name
+
+python has a constructor __new__()
+& initializer __init__()
+
+- DocStrings
+
+<Modules and Packages>
+modules := python files
+
+* two files in the same folder
+-> we can load a class from one module
+
+*'import' is used for importing 'modules' or 'specific classes' or 'functions' from modules
+
+*'from import' can import the one class
+
+'from... import *' Don't do this!
+1) it takes a lot longer to find where that class is located.
+2) it can't help code completion or the ability to jump to the definition
+3) bring unexpected objects
+
+<Package>
+:a collection of modules in a folder
+'name of the package' := 'name of the folder'
+
+'__init__.py' could make a folder as a package
+
+Absolute import
+Relative import
+
+if __name__ == '__main__'
+    main()
+=> main is a start-up code
+
+a module will be executed right after import.
+
+all code in a module is executed immediately at the time it is imported
+
+To solve this, we should always put our start-up code in a function ('main') and only execute that function when we know executing as a script, but not when our coding is being imported from a different script.
+
+when the module is executed directly with 'python module.py'.
+it is never imported so the __name__ is set to the string '__main__'
+
+<Accessibility>
+All methods and attributes are publicly available.
+
+By convention, '_' -> internal variable
+
+'__' name mangling
+
+__init__.py 
+
+-> put all your code in a single module
+-> later decide to break it up into a package of modules
+
+<Global keyword>

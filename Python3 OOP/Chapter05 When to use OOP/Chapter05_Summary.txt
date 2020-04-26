@@ -1,0 +1,24 @@
+An object has both data and behavior
+
+OOP code is relatively self documenting
+
+'property' keyword -> means 'direct access'
+
+Why we should remove duplicate codes
+- They all boil down readability and maintainability
+- you are the only one reading your code. But after 8 months
+  it will be as imcomprehensible.
+  
+Inheritance Relationship
+: "is a"
+
+Composition Relationship
+: "has a parent"
+
+Inheritance -> Composition (but not reverse direction always)
+
+exercise>
+ZipReplace (Basic, Inheritance, Composition)
+
+Case Study : Simple Word Processor
+-> Separate objects (Cursor, Document)

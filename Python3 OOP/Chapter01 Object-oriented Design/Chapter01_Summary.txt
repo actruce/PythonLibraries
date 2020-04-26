@@ -1,0 +1,46 @@
+"object" is a collection of data and associated behaviors
+
+<Software Development>
+☆ In fact, analysis, design, and programming are all stages of software development
+
+1) OOA (Object-oriented Analysis)
+: "what needs to be done"
+2) OOD (Object-oriented Design)
+: "how things should be done"
+3) OOP (Object-oriented Programming)
+: "converting defined design into a working program"
+
+Association : related
+ex) Orange 'go in' Basket
+    Apple 'go in' Barrel
+
+Data describes objects
+ex) Orange: Weight, Orchard, Date_Picked
+    Backet: location
+    Apple: color, Weight
+    Barrel: size
+
+Behaviors are actions
+ex) Orange "go in" Basket
+
+Hiding detail and creating the public interface
+ex) Driver-Car, Mechanic-Car
+
+<Composition & Inheritance>, ex) 'Chess Game'
+Aggregation : can exist independently (not like composition)
+
+To differentiate between aggregation and composition is to think about the lifespan of the object. If the composite(outside) object controls when the related(inside) objects are created and destroyed, compositino is most suitable. If the related object is created independently of the composite object, or can outlast that object, an aggregation relationship makes more sense.
+
+Composition is a subset of 'Aggregation' (Aggregation is simply a more general form of composition)
+
+Inheritance : 'is a' relationship
+=>overriding, 
+
+abstract class/method 
+   -> Polymorphism(rarely used in python) , instead 'duck typing'
+   
+☆ duck typing : "If it walks like a duck or swims like a duck, it's duck. We don't care if it really is a duck(inherentance)"
+   
+Multiple Inheritance : Do not abuse
+
+<Case Study> : Library Catalogue System

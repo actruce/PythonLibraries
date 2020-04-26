@@ -1,0 +1,64 @@
+Python disables arbitrary properties on "object"
+and several other built-ins by default to save memory
+
+ex) 
+o = object()
+o.x = 5 -> error
+
+<Tuples and named tuples>; immutable
+primary benefit
+: use them as keys in dictionaries in other locations where an
+object requires a hash value
+
+It's possible
+stock = "GOOG", 613.30, 625.86, 610.50
+high = stock[2]
+stock[1:3]
+
+names tuple>
+from collections import namedtuple
+Stock = namedtuple("stock", "symbol current high low")
+(normal class)
+
+stock = Stock(" ", 613.30, 625.86, 610.50)
+
+perfect for many "data" only representations
+
+<Dictionary>
+"stocks.setdefault" 
+if key exists -> get
+else -> set the key
+
+keys(), values(), items()
+
+keys are inherently unsorted
+
+<defaultdict>
+from collections import defaultdict
+
+*example tuple_counter
+
+<List>
+frequencies = [(c,0) for c in CHARACTERS]
+
+<Sorting Lists>
+__lt__
+key argument
+
+<Set>
+{} -> {key1:val1, key2:val2} Dictionary
+   -> {val1, val2} Set
+  
+Primary Feature : combine or compare the items in two or more sets. i.e. union, intersection, symmetric_difference
+
+issubset <-> issuperset
+
+<Extending build-ins>
+__add__ <-> '+'
+__contains__ <-> x in myobj
+__setitem__ <-> myobj[i] = value
+__get_item__ <-> something = myobj[i]
+
+ex) DictSorted
+
+from collections import OrderedDict

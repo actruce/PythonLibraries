@@ -1,0 +1,56 @@
+-len()
+-reversed()
+-enumerate(): create a list of tuples
+
+-zip(): it takes two or more sequences and create a new sequence of tuples
+
+ex) inverse of zip
+
+-sorted(): all iterable
+
+ex) sort() -> only for list
+
+-min(), max(), sum()
+
+<List Comprehension>
+: converting one list -> related list
+
+any iterable can also be placed inside a comprehension
+
+<Generator Expressions>
+Use the same syntax as comprehensions, but they don't create a final container object.
+'( )'
+
+* 'yield' is a key to 'generator'
+
+<method overloading>
+Python doesn't permit multiple methods with the same name
+
+<default argument>
+the default value was calculated when the function was defined, not when it was called
+
+<variable arguments>
+a list like *args
+a dict like **kwargs
+
+$ class level variables are shared between instances of the class
+
+<Unpacking arguments>
+
+
+<Functions are objects too>
+__name__
+__class__
+.description
+
+ex) TimedEvent
+
+<Using Functions as attributes>
+"monkey-patching"
+
+<Callable Objects>
+Any object can be turned into a callable
+__call__
+
+Case Study>
+mailing_list

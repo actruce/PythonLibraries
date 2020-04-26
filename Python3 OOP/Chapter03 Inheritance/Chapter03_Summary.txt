@@ -1,0 +1,75 @@
+<Extending built-ins>
+
+class ContactList(list):
+    def search(self, name):
+    
+class Contact:
+    all_contacts = ContactList[]
+    
+    
+<Overriding and super>
+
+<Multiple inheritance>
+: called 'mixin'
+
+<Alternatives for Inheritance>
+1) single inheritance + add func
+2) stand-alone
+3) monkey-patch
+
+<Diamond Problem>
+super() calls next class's __init__() rather than parent's __init__()
+
+<Different sets of arguments>
+
+# left parent
+class Contact:
+    all_contacts = []
+    
+    def __init__(self, name='', email='', **kwargs):
+        super().__init__(**kwargs)
+        self.name = name
+        self.email = email
+        self.all_contact.append(self)
+        
+class AddressHolder:
+    def __init__(self, street='', city='', state='', code='', **kwargs):
+        super().__init__(**kwargs)
+        self.street = street
+        self.city = city
+        self.state = state
+        self.code = code
+        
+class Friend(Contact, AddressHolder):
+    def __init__(self, phone='', **kwargs):
+        super().__init__(**kwargs)
+        self.phone = phone
+        
+
+<Polymorphism>
+class AudioFile:
+    def __init__(self, filename):
+        if not filename.endswith(self.ext):
+            raise Exception("Invalid file format")
+    self.filename = filename
+    
+class MP3File(AudioFile):
+    ext = "mp3"
+    def play(self):
+        print("playing {} as mp3".format(self.filename))
+class WavFile(AudioFile):
+    ext = "wav"
+    def play(self):
+        print("playing {} as wav".format(self.filename))
+class OggFile(AudioFile):
+    ext = "ogg"
+    def play(self):
+        print("playing {} as ogg".format(self.filename))
+
+
+<Duck Typing>
+any object (does not need to be a subclass)
+
+duck-typed object only needs to provide those method and attributes that are actually being accessed.
+
+<Case Study>
