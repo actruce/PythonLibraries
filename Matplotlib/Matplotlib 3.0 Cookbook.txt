@@ -1,0 +1,24 @@
+Matplotlib 3.0 Cookbook, Srinivasa Rao Poladi, Packt, 2018
+
+[Table of Contents]
+1. Anatomy of Matplotlib(*)
+2. Getting Started with Basic Plots
+3. Plotting Multiple Charts, Subplots, and Figures
+4. Developing Visualizations for Publishing Quality(*)
+5. Plotting with Object Oriented API
+6. Plotting with Advanced Features
+7. Embedding Text and Expressions
+8. Saving the Figure in Different formats
+9. Developing Interactive Plots
+10. Embedding Plots in Graphical User Interface
+11. Plotting 3D Graphs Using the mplot3d Toolkit
+12. Using the axisartist Toolkit
+13. Using the axes_grid1 Toolkit
+14. Plotting Geographical Maps Using Cartopy Toolkit
+15. Exploratory Data Analysis Using the Seaborn Toolkit(*)
+
+Chapter04. (*)
+- Costomised colorbar with discrete colors
+Chapter15. (*)
+- pairplot()
+- heatmap()
